@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,53 @@
   to {
     transform: rotate(360deg);
   }
+} */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.product{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /* flex-basis: 500px; */
+  gap: 30px;
+}
+.card{
+  border-radius: 5px;
+  padding: 10px;
+  width: 300px;
+  height: 300px;
+  background-color: cornflowerblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card img{
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+  background-size: cover;
+}
+.pagination{
+  padding: 10px;
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+}
+.pagination > span{
+  padding: 15px 20px ;
+  border: 1px solid gray;
+  cursor: pointer;
+}
+.activePage{
+  background-color: black;
+  color: white;
+}
+.pagination__disable{
+  opacity: 0;
 }
